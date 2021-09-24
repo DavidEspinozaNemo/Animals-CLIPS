@@ -239,3 +239,36 @@
 	=>
 	(assert (animal halcon_peregrino))
 	(printout t "El animal es un halcón peregrino" crlf))
+	
+(defrule A7 "Tigre"
+        (carnivoro ?x)
+        (color_leonado ?x)
+	    (franjas_negras ?x)
+        =>
+        (assert (animal tigre))
+        (printout t "El animal es un tigre" crlf))
+
+(defrule A8 "Leopardo"
+        (carnivoro ?x)
+        (color_leonado ?x)
+	    (manchas_oscuras ?x)
+        =>
+        (assert (animal leopardo))
+        (printout t "El animal es un leopardo" crlf))
+
+(defrule A9 "Jirafa"
+        (ungulado ?x)
+	    (patas_largas ?x)
+	    (cuello_largo ?x)
+	    (color_leonado ?x)
+        =>
+        (assert (animal jirafa))
+        (printout t "El animal es un jirafa" crlf))
+
+(defrule A10 "Cebra"
+        (ungulado ?x)
+	    (color_blanco ?x)
+	    (franjas_negras ?x)
+        =>
+        (assert (animal cebra))
+        (printout t "El animal es un cebra" crlf))
